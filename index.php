@@ -16,4 +16,9 @@ $database = new Medoo([
 
 // Retrieve data
 $data = $database->select('mytable', '*');
-print_r($data);
+#echo '<pre>';
+#print_r($data);
+header('Content-Type: application/json');
+//echo json_encode($data);//transforme coleção de dados array
+echo json_encode($data, JSON_PRETTY_PRINT);
+//json_decode($data);// transforme string em array
