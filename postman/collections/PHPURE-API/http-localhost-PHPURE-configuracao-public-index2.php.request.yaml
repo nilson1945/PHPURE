@@ -1,0 +1,5 @@
+$kind: http-request
+name: http://localhost/PHPURE/configuracao/public/index2.php
+url: http://localhost/PHPURE/configuracao/public/index2.php
+method: GET
+order: 3000

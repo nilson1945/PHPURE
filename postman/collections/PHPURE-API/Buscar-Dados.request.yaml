@@ -1,5 +1,5 @@
 $kind: http-request
 name: Buscar Dados
 method: GET
-url: 'http://localhost/PHPURE/index.php'
-order: 1000
+url: http://localhost/PHPURE/configuracao/public/clients/v1/lista_all_clients/index1.php
+order: 2000
