@@ -1,5 +1,0 @@
-$kind: http-request
-name: add_clients
-url: http://localhost/PHPURE/configuracao/public/clients/v1/add_clients/index1.php
-method: GET
-order: 3000

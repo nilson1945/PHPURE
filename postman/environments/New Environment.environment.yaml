@@ -1,2 +1,8 @@
 name: New Environment
-values: []
+values:
+  - key: base_url
+    value: 'http://localhost/PHPURE/configuracao/public/clients'
+    enabled: true
+  - key: version
+    value: v1
+    enabled: true

@@ -1,5 +1,0 @@
-$kind: http-request
-name: all_clients
-url: http://localhost/PHPURE/configuracao/public/clients/v1/all_clients/index1.php
-method: GET
-order: 1000

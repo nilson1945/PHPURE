@@ -1,0 +1,5 @@
+$kind: http-request
+name: add_clients
+url: '{{base_url}}/{{version}}/add_clients/index1.php'
+method: POST
+order: 3000
