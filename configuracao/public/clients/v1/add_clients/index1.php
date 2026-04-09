@@ -1,3 +1,4 @@
+/*
 <?php
 require_once __DIR__ . "/../../../../../configuracao/config_clients_v1.php";
 require_once __DIR__ . "/../../../../../inc/init.php";
@@ -17,8 +18,8 @@ $database = new Medoo(MYSQL);
 $results = $database->select('meu_client', '*');
 var_dump($results);
 
-header('Content-Type: application/json');
-echo json_encode($results);
+/*header('Content-Type: application/json');
+echo json_encode($results);*/
 
-
-?>
+Api::sucessMessage(200, $results);
+*/

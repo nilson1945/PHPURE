@@ -21,6 +21,19 @@ class Api
 
         exit;
     }
+    public static function sucessMessage($httpCode, $results)
+    {
+      http_response_code($httpCode);
+
+        echo json_encode([
+            'status' => 'success',
+            'code' => $httpCode,
+            'message' => 'success',
+            'date' => $results,
+        ], JSON_PRETTY_PRINT);
+
+        exit;  
+    }
 }
 
 ?>
