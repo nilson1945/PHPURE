@@ -1,5 +1,5 @@
 $kind: http-request
-name: add_clients
+name: all_clients
 url: "{{base_url}}/{{version}}/all_clients/index1.php"
 method: GET
-order: 2000
+order: 1082
