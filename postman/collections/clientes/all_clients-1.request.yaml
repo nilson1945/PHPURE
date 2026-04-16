@@ -2,4 +2,8 @@ $kind: http-request
 name: all_clients
 url: "{{base_url}}/{{version}}/all_clients/index1.php"
 method: GET
+auth:
+  type: inherit
+  credentials:
+    id: ca8d1722-2c93-4766-821a-b3bbd82c1d26
 order: 1082

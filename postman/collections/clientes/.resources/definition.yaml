@@ -3,3 +3,10 @@ name: clientes
 variables:
   base_url: ""
   version: ""
+auth:
+  - id: ca8d1722-2c93-4766-821a-b3bbd82c1d26
+    type: basic
+    name: Basic Auth
+    credentials:
+      username: abacaxi
+      password: abacaxi123

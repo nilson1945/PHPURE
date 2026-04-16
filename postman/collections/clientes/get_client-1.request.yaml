@@ -1,5 +1,8 @@
 $kind: http-request
 name: get_client
-url: '{{base_url}}/{{version}}/get_client/index1.php'
-method: GET
+url: "{{base_url}}/{{version}}/get_client/index1.php"
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"id\": 17\r\n}"
 order: 3000
