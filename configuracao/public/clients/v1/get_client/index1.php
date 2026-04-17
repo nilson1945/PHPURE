@@ -3,6 +3,9 @@
 require_once __DIR__ . "/../../../../../configuracao/config_clients_v1.php";
 require_once __DIR__ . "/../../../../../inc/init.php";
 Api::checkHTTPMethod('POST');
+//HTTP basic authentication
+Api::checkBasicAuth();
+
 //$id = $_GET['id'];
 $requestData = json_decode(file_get_contents('php://input'), true);
 

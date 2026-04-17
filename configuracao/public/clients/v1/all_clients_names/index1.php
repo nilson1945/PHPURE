@@ -3,6 +3,8 @@
 require_once __DIR__ . "/../../../../../configuracao/config_clients_v1.php";
 require_once __DIR__ . "/../../../../../inc/init.php";
 Api::checkHTTPMethod('GET');
+//HTTP basic authentication
+Api::checkBasicAuth();
 
 // Evita erro quando não existe REQUEST_METHOD
 if (!isset($_SERVER["REQUEST_METHOD"])){

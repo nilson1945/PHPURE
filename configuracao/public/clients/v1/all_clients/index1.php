@@ -8,17 +8,10 @@ Api::checkHTTPMethod('GET');
 if (!isset($_SERVER["REQUEST_METHOD"])){
     $_SERVER["REQUEST_METHOD"] = 'POST';
 }
-$userName = "abacaxi";
-$password = "abacaxi123";
 
-if (
-    !isset($_SERVER['PHP_AUTH_USER']) ||
-    !isset($_SERVER['PHP_AUTH_PW']) ||
-    $_SERVER['PHP_AUTH_USER'] !== $userName ||
-    $_SERVER['PHP_AUTH_PW'] !== $password
-) {
-    Api::errorMessage(401, "Authentication error");
-}
+
+//HTTP basic authentication
+Api::checkBasicAuth();
 
  
 

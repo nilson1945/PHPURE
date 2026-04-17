@@ -34,6 +34,17 @@ class Api
 
         exit;  
     }
+    public static function checkBasicAuth(){
+        if(HTTP_BASIC_AUTH_ACTIVE) return;
+        if (
+    !isset($_SERVER['PHP_AUTH_USER']) ||
+    !isset($_SERVER['PHP_AUTH_PW']) ||
+    $_SERVER['PHP_AUTH_USER'] !== HTTP_BASIC_AUTH_USER ||
+    $_SERVER['PHP_AUTH_PW'] !== HTTP_BASIC_AUTH_PW
+) {
+    Api::errorMessage(401, "Authentication error");
+}
+    }
 }
 
 ?>
