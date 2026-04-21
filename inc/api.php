@@ -74,7 +74,8 @@ class Api
         if (count($results) === 0) {
             Api::errorMessage(401, 'Autorização inválida.');
         } else {
-            if (password_verify($client_secret, $results[0]['client_secret'])) {
+            // CORREÇÃO APLICADA AQUI
+            if (!password_verify($client_secret, $results[0]['client_secret'])) {
                 Api::errorMessage(401, 'Autorização inválida.');
             }
         }
