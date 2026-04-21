@@ -1,9 +1,18 @@
 $kind: http-request
 name: all_clients
 url: "{{base_url}}/{{version}}/all_clients/index1.php"
-method: GET
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"Cliente_id\": \"497dcba3-ecbf-4587-a2dd-5eb0665e6880\"\r
+
+    \    \"client_secret\": \"ULPc7GaCcWN7ANrnTvQt6ymC\"\r
+
+    \r
+
+    }\r\n"
 auth:
-  type: inherit
-  credentials:
-    id: ca8d1722-2c93-4766-821a-b3bbd82c1d26
+  type: noauth
 order: 1082

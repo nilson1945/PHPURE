@@ -8,9 +8,12 @@ define('MYSQL', [
 
 ]);
 //basic auth
-define ('HTTP_BASIC_AUTH_ACTIVE', true);
+define ('HTTP_BASIC_AUTH_ACTIVE', false);
 define ('HTTP_BASIC_AUTH_USER', 'abacaxi');
 define ('HTTP_BASIC_AUTH_PW', 'abacaxi123');
+
+//auth by client_id and client_secret
+define('AUTH_CLIENT_SECRET', true);
 
 
 
