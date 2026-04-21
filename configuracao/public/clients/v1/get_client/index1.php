@@ -5,8 +5,6 @@ require_once __DIR__ . "/../../../../../inc/init.php";
 use Medoo\Medoo;
 
 Api::checkHTTPMethod('POST');
-
-// HTTP basic authentication + client auth
 $requestData = json_decode(file_get_contents('php://input'), true);
 Api::checkAuthClientSecret($requestData);
 

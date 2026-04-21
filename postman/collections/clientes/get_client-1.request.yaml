@@ -4,5 +4,15 @@ url: "{{base_url}}/{{version}}/get_client/index1.php"
 method: POST
 body:
   type: json
-  content: "{\r\n    \"id\": 17\r\n}"
+  content: "{\r
+
+    \    \"client_secret\": \"ULPc7GaCcWN7ANrnTvQt6ymC\",\r
+
+    \    \"client_id\": \"497dcba3-ecbf-4587-a2dd-5eb0665e6880\"\r
+
+    }"
+auth:
+  type: inherit
+  credentials:
+    id: ca8d1722-2c93-4766-821a-b3bbd82c1d26
 order: 3000

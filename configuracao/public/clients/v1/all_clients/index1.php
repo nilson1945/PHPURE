@@ -8,10 +8,6 @@ if (!isset($_SERVER["REQUEST_METHOD"])) {
 }
 
 Api::checkHTTPMethod('POST');
-
-// HTTP basic authentication
-//Api::checkBasicAuth();
-
 $requestData = json_decode(file_get_contents('php://input'), true);
 Api::checkAuthClientSecret($requestData);
 
