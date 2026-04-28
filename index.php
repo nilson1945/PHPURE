@@ -11,7 +11,7 @@ $database = new Medoo([
     'host' => 'localhost',
     'database' => 'teste_banco_de_dados',
     'username' => 'teste_banco',
-    'password' => 'phpadm194533'
+    'password' => ''
 ]);
 
 // Retrieve data
